@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 
 // mongoose.connect("")
 
-mongoose.connect('mongodb+srv://javatest456:d7EcOu4V36PMm5YQ@cluster0.aeeysz3.mongodb.net/personData', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
