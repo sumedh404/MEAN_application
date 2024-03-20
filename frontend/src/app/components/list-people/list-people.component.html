@@ -1,0 +1,12 @@
+<h1>List of People</h1>
+
+<ul>
+  <li *ngFor="let person of peopleList">
+    <p>{{ person.firstName }} {{ person.lastName }}</p>
+    <p>Age: {{ person.age }}</p>
+    <p>Email: {{ person.email }}</p>
+    <p>Phone: {{ person.phone }}</p>
+    <button (click)="editPerson(person.id)">Edit</button>
+    <button (click)="deletePerson(person.id)">Delete</button>
+  </li>
+</ul>

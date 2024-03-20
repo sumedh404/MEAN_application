@@ -1,0 +1,29 @@
+<h1>Edit Person</h1>
+
+<div>
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" [(ngModel)]="person.firstName" name="firstName" required>
+</div>
+
+<div>
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" [(ngModel)]="person.lastName" name="lastName" required>
+</div>
+
+<div>
+  <label for="age">Age:</label>
+  <input type="number" id="age" [(ngModel)]="person.age" name="age" required>
+</div>
+
+<div>
+  <label for="email">Email:</label>
+  <input type="email" id="email" [(ngModel)]="person.email" name="email" required>
+</div>
+
+<div>
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" [(ngModel)]="person.phone" name="phone" required>
+</div>
+
+<button (click)="saveChanges()">Save Changes</button>
+<button (click)="goBack()">Cancel</button>
